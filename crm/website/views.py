@@ -25,3 +25,6 @@ def home(request):
 
 def logout_user(request):
     pass
+
+
+# Heading to Logout
