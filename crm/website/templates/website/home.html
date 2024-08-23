@@ -2,6 +2,24 @@
 
 {% block content %}
 
-<h1>Hello World</h1>
+<div class="col-md-6 offset-md-3">
+
+<h1>login</h1>
+<br/>
+
+<form method="post" action="{% url 'home' %}">
+    {% csrf_token %}
+    <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" name="first_name" placeholder="First_name" required>
+
+        </div></br>
+        <div class="mb-3">
+          <input type="password" class="form-control" name="password", placeholder="Password" required>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-secondary">login</button>
+      </form>
+</div>
 
 {% endblock %}
