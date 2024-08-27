@@ -7,6 +7,7 @@
 
 <form method="post" action="{% url 'add_record' %}">
     {% csrf_token %}
+    
     {{ form.as_p }}
 
     <br/>
