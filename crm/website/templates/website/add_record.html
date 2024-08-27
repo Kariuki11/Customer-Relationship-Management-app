@@ -5,4 +5,12 @@
 <h1>Add Record</h1>
 <br/>
 
+<form method="post" action="{% url 'home' %}">
+    {% csrf_token %}
+
+    <br/>
+    <button type="submit" class="btn btn-secondary">Add Record</button>
+
+</form>
+
 {% endblock %}
