@@ -59,6 +59,7 @@ def customer_record(request, pk):
     else:
         messages.success(request, 'You Must Be Logged In To View Customer Records')
         return redirect('home')
+    
 
 
 
