@@ -9,7 +9,16 @@
     <h1>Records...</h1>
     {% if records %}
         {% for record in records %}
-            {{ record }}
+            {{ record.first_name }}
+            {{ record.last_name }}
+            {{ record.email }}
+            {{ record.phone }}
+            {{ record.address }}
+            {{ record.city }}
+            {{ record.state }}
+            {{ record.zip }}
+            {{ record.country }}
+            <br/>
         {% endfor %}
 
     {% endif %}
