@@ -31,6 +31,7 @@ def logout_user(request):
     return redirect('home')
 
 
+
 def register_user(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -59,6 +60,12 @@ def customer_record(request, pk):
     else:
         messages.success(request, 'You Must Be Logged In To View Customer Records')
         return redirect('home')
+    
+    
+def delete_customer(request, pk):
+    delete_it = Record.objects.get(id=pk)
+    delete_it.delete()
+    
     
 
 
