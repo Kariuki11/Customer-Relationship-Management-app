@@ -9,19 +9,17 @@
         {{ customer_record.last_name }}
     </div>
     <div class="card-body">
-      <h5 class="card-title">
-        {{ customer_record.first_name }}
-            {{ customer_record.last_name }}
-            {{ customer_record.email }}
-            {{ customer_record.phone }}
-            {{ customer_record.address }}
-            {{ customer_record.city }}
-            {{ customer_record.state }}
-            {{ customer_record.zip }}
-            {{ customer_record.country }}
-            {{ customer_record.created_at }}
-            {{ customer_record.id }}
-      </h5>
+        <p class="card-text">
+            <strong>EMAIL: </strong>{{ customer_record.email }}<br/>
+            <strong>pHONE: </strong>{{ customer_record.phone }}<br/>
+            <strong>ADDRESS: </strong>{{ customer_record.address }}<br/>
+            <strong>CITY: </strong>{{ customer_record.city }}<br/>
+            <strong>STATE: </strong>{{ customer_record.state }}<br/>
+            <strong>ZIPCODE: </strong>{{ customer_record.zip }}<br/>
+            <strong>COUNTRY: </strong>{{ customer_record.country }}<br/>
+            <strong>CREATED AT: </strong>{{ customer_record.created_at }}<br/>
+            <strong>RECORD ID: </strong>{{ customer_record.id }}<br/>
+        </p>
       
     </div>
   </div>
