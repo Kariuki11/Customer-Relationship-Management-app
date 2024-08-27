@@ -3,16 +3,17 @@
 
 <h1>Customer Record:</h1>
 
-{{ record.first_name }} {{ record.last_name }}</td>
-{{ record.email }}</td>
-{{ record.phone }}</td>
-{{ record.address }}</td>
-<td>{{ record.city }}</td>
-<td>{{ record.state }}</td>
-<td>{{ record.zip }}</td>
-<td>{{ record.country }}</td>
-<td>{{ record.created_at }}</td>
-<td><a href="{% url 'record' record.id %}">{{ record.id }}</a></td>
+{{ record.first_name }} {{ record.last_name }}
+
+            {{ customer_record.email }}
+            {{ customer_record.phone }}
+            {{ customer_record.address }}
+            {{ record.city }}
+            {{ record.state }}
+            {{ record.zip }}
+            {{ record.country }}
+            {{ record.created_at }}
+            {{ record.id }}
 
 {{ customer_record }}
 
