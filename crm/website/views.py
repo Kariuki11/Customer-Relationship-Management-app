@@ -24,10 +24,12 @@ def home(request):
         return render(request, 'website/home.html', {'records':records})  # Render the template for GET requests
 
 
+
 def logout_user(request):
     logout(request)
     messages.success(request, "You have been logged out.")
     return redirect('home')
+
 
 def register_user(request):
     if request.method == 'POST':
@@ -49,7 +51,9 @@ def register_user(request):
 
 
 
-
+def customer_record(request, pk):
+    record = Record.objects.get(id=pk)
+    return render(request, 'website/record.html', {'record':record})
 
 
 
