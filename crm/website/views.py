@@ -68,6 +68,7 @@ def delete_customer(request, pk):
         delete_it.delete()
         messages.success(request, "Records Deleted Successfully...")
         return redirect('home')
+    else:
     
     
 
