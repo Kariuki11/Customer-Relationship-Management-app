@@ -3,16 +3,15 @@
 
 <h1>Customer Record:</h1>
 
-            {{ record.first_name }} {{ record.last_name }}<br/>
+            {{ customer_record.first_name }}
+            {{ customer_record.last_name }}<br/>
             {{ customer_record.email }}<br/>
             {{ customer_record.phone }}<br/>
             {{ customer_record.address }}<br/>
             {{ customer_record.city }}<br/>
             {{ customer_record.state }}<br/>
-            {{ customer_record.zip }}
-            {{ customer_record.country }}
-            {{ customer_record.created_at }}
-            {{ customer_record.id }}
-
-
+            {{ customer_record.zip }}<br/>
+            {{ customer_record.country }}<br/>
+            {{ customer_record.created_at }}<br/>
+            {{ customer_record.id }}<br/>
 {% endblock %}
