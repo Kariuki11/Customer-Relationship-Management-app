@@ -11,3 +11,6 @@ class Record(model.Model):
     state = models.CharField(max_length=50)
     state = models.CharField(max_length=50)
     zip_code = models.CharField(max_length=20)
+    
+    def __str__(self):
+        return(f"{self.first_name} {self.last_name}")
