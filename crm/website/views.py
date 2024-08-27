@@ -63,8 +63,11 @@ def customer_record(request, pk):
     
     
 def delete_customer(request, pk):
-    delete_it = Record.objects.get(id=pk)
-    delete_it.delete()
+    if request.user.is_authenticated:
+        delete_it = Record.objects.get(id=pk)
+        delete_it.delete()
+        messages.success(request, "Records Deleted Successfully...")
+        return redirect('home')
     
     
 
