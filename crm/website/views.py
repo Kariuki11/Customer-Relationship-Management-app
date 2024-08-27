@@ -72,6 +72,9 @@ def delete_record(request, pk):
         messages.success(request, "You have to be logged in to delete records")
         return redirect('home')
     
+def add_record(request):
+    return render(request, 'website/add_record.html', {})
+    
     
 
 
