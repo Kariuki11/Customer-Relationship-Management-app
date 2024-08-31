@@ -107,9 +107,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any questions or suggestions, feel free to reach out:
 
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile/)
-- **GitHub:** [Your GitHub Profile](https://github.com/yourusername)
+- **Email:** kariukikennedy288@gmail.com
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/kennedy-kariuki-222922286/)
+- **GitHub:** [Your GitHub Profile](https://github.com/Kariuki11)
 
 ---
 
