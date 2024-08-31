@@ -22,7 +22,7 @@ To get started with the CRM Application, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/crm-app.git
+git clone https://github.com/Kariuki11/crm-app.git
 cd crm-app
 ```
 
